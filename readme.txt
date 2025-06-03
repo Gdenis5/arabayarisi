@@ -1,70 +1,66 @@
-# 🚗 Unity Car Game
+# 🚗 Unity Araba Yarışı Oyunu
 
-Unity ve C# kullanılarak geliştirilmiş basit ama işlevsel bir 3D araba oyunudur. Bu proje, oyun programlamaya yeni başlayanlar için temel sürüş mekaniği, fizik ve kullanıcı arayüzü konularında pratik yapma fırsatı sunar.
+Bu proje, Unity oyun motoru ve C# programlama dili kullanılarak geliştirilmiş bir 3D araba yarışı oyunudur. Oyuncu, klavye tuşları ile aracı kontrol eder ve bitiş çizgisine en kısa sürede ulaşmaya çalışır. Bu oyun, temel fizik, kontrol sistemleri ve kullanıcı arayüzü (UI) bileşenlerini barındıran bir örnek çalışmadır.
 
 ## 🎮 Özellikler
 
-- Gerçek zamanlı araba kontrolü (WASD veya yön tuşları ile)
-- Temel fizik motoru ile sürüş deneyimi
-- Kamera geçişleri (isteğe bağlı)
-- Hız göstergesi, sayaç gibi UI öğeleri
-- Başlangıç ve bitiş noktaları içeren yarış sahnesi
-
-## 📦 Kurulum
-
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edin:
-
-1. Bu repoyu klonlayın:
-   ```bash
-   git clone https://github.com/kullaniciadi/unity-car-game.git
-````
-
-2. Unity Hub'ı açın ve bu klasörü "Add" ile projelerinize ekleyin.
-3. `Assets/Scenes/MainScene.unity` sahnesini açarak oyunu başlatabilirsiniz.
-
-## 🧭 Kontroller
-
-| Eylem                       | Tuşlar       |
-| --------------------------- | ------------ |
-| İleri Git                   | `W` veya `↑` |
-| Geri Git                    | `S` veya `↓` |
-| Sola Dön                    | `A` veya `←` |
-| Sağa Dön                    | `D` veya `→` |
-| Kamera Değiştir (opsiyonel) | `C`          |
+* Klavye ile araba kontrolü (W, A, S, D veya yön tuşları)
+* Unity Rigidbody fiziği ile gerçekçi sürüş
+* Başlangıç ve bitiş noktaları
+* Süre veya skor takibi (varsa)
+* Kamera geçişi (isteğe bağlı)
+* UI: hız göstergesi, zamanlayıcı, bitiş ekranı vb.
 
 ## 📁 Proje Yapısı
 
-```plaintext
-UnityCarGame/
+```
+arabayarisi/
 ├── Assets/
-│   ├── Scenes/            # Oyun sahneleri (MainScene.unity)
-│   ├── Scripts/           # C# betikleri (CarController.cs vb.)
-│   ├── Prefabs/           # Araba ve diğer nesne prefabları
-│   ├── Materials/         # Kullanılan materyaller
-│   ├── UI/                # UI öğeleri (Canvas, Text vb.)
-├── ProjectSettings/       # Unity proje ayarları
-└── README.md              # Bu dosya
+│   ├── Scenes/            → Oyun sahneleri (MainScene.unity)
+│   ├── Scripts/           → C# script dosyaları (CarController.cs vb.)
+│   ├── Prefabs/           → Araba prefab'ı ve diğer nesneler
+│   ├── Materials/         → Materyal dosyaları
+│   ├── UI/                → Kullanıcı arayüz öğeleri
+├── ProjectSettings/       → Unity proje ayarları
+└── README.md              → Bu dosya
 ```
 
-## 🚀 Geliştirici Notları
+## 🛠️ Kurulum
 
-* Araba kontrolü `Rigidbody` komponenti ile sağlanmaktadır.
-* Tekerlek dönüşleri ve yönlendirme kodları `CarController.cs` içinde yer almaktadır.
-* UI sistemi Unity'nin `Canvas` yapısı kullanılarak oluşturulmuştur.
+1. Bu projeyi GitHub üzerinden klonlayın:
 
-## 🧑‍💻 Katkıda Bulunmak
+   `git clone https://github.com/Gdenis5/arabayarisi.git`
 
-Katkılarınızı memnuniyetle karşılıyorum. Lütfen:
+2. Unity Hub üzerinden projeyi açın.
 
-1. Bir `issue` açarak önerinizi ya da hatayı belirtin.
-2. Gerekli değişiklikleri yaparak bir `pull request` gönderin.
+3. `Assets/Scenes/MainScene.unity` sahnesini açarak oyunu başlatın.
+
+## 🎮 Kontroller
+
+| Eylem                          | Tuşlar   |
+| ------------------------------ | -------- |
+| İleri Git                      | W veya ↑ |
+| Geri Git                       | S veya ↓ |
+| Sola Dön                       | A veya ← |
+| Sağa Dön                       | D veya → |
+| Kamera Değiştir (isteğe bağlı) | C        |
+
+## 💡 Geliştirici Notları
+
+* `CarController.cs` script'i, aracın hareketini ve yönünü kontrol eder.
+* Araç hareketleri `Rigidbody` bileşeni üzerinden gerçekleştirilir.
+* UI için Unity'nin `Canvas`, `Text` ve `Image` bileşenleri kullanılmıştır.
+
+## 🤝 Katkıda Bulunma
+
+Katkılarınızı memnuniyetle karşılıyoruz. Lütfen önce bir `issue` açın ve ardından bir `pull request` gönderin.
 
 ## 📄 Lisans
 
-Bu proje [MIT Lisansı](LICENSE) kapsamında lisanslanmıştır. Dilediğiniz gibi kullanabilir, değiştirebilir ve dağıtabilirsiniz.
+Bu proje MIT Lisansı ile lisanslanmıştır. Dilediğiniz gibi kullanabilir, değiştirebilir ve dağıtabilirsiniz.
 
 ---
 
-Teşekkürler! Bu projeyi beğendiysen yıldız bırakmayı unutma ⭐
+**Made with 💻 + ☕ by Gdenis5**
 
-```
+---
